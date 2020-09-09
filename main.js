@@ -7,8 +7,7 @@ const open = document.getElementById('modalOpen');
 console.log(open);
 
 // 閉じるボタン取得
-const close = document.getElementsByClassName('modalClose');//?
-//const close = document.getElementById('close');
+const close = document.getElementsByClassName('modalClose')[0];
 console.log(close);
 
 // クリックで開くイベントリスナー
@@ -18,11 +17,11 @@ open.addEventListener('click', modalOpen);
 close.addEventListener('click', modalClose);
 
 // モーダル以外の場所クリックのイベントリスナー
-// .addEventListener('click', clickAnywhere);
+//.addEventListener('click', clickAnywhere);
 
 // モーダルオープンの関数
 function modalOpen() {
-
+    
 }
 
 // モーダルを閉じる関数
