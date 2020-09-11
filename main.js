@@ -17,17 +17,22 @@ closeBtn.addEventListener('click', modalClose);
 window.addEventListener('click', clickAnywhere);
 
 // モーダルオープンの関数
-
 function modalOpen() {
-    console.log(1);  
+    if(==) {
+        modal.style.display = 'block';//開くボタンを押したらモーダルが出る
+    } else {
+        modal.style.display = 'none';
+    }
 }
 
 // モーダルを閉じる関数
 function modalClose() {
-    console.log(2);
+    modal.style.display = 'none';//閉じるボタンを押したらモーダルが消える
 }
 
 // モーダル以外がクリックされた時に閉じる関数
 function clickAnywhere() {
-    console.log(3);
+    if(==) {
+        modal.style.display = 'none';
+    }
 }
