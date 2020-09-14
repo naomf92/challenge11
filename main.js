@@ -18,11 +18,7 @@ window.addEventListener('click', clickAnywhere);
 
 // モーダルオープンの関数
 function modalOpen() {
-    if(==) {
-        modal.style.display = 'block';//開くボタンを押したらモーダルが出る
-    } else {
-        modal.style.display = 'none';
-    }
+    modal.style.display = 'block';//開くボタンを押したらモーダルが出る
 }
 
 // モーダルを閉じる関数
@@ -32,7 +28,7 @@ function modalClose() {
 
 // モーダル以外がクリックされた時に閉じる関数
 function clickAnywhere() {
-    if(==) {
+    if(event.target == modal) {
         modal.style.display = 'none';
     }
 }
