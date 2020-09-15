@@ -27,8 +27,9 @@ function modalClose() {
 }
 
 // モーダル以外がクリックされた時に閉じる関数
-function clickAnywhere() {
-    if(event.target == modal) {
+function clickAnywhere(e) {// 以下のeventは引数として扱うので、宣言時に用意も必要です
+    if(e.target == modal) {
         modal.style.display = 'none';
+        console.log(e);
     }
 }
